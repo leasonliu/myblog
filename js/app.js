@@ -1,3 +1,11 @@
+window.onload = function() {
+  var date = new Date().toLocaleDateString("en-US");
+  document.getElementById("date").innerHTML = date;
+  document.getElementById("date2").innerHTML = date;
+  document.getElementById("date3").innerHTML = date;
+  document.getElementById("date4").innerHTML = date;
+  document.getElementById("date5").innerHTML = date;
+};
 onNumberChanged = function() {
   var selectedValue = document.getElementById("numberOfArticles").value;
   var atc1 = document.getElementById("atc1");
