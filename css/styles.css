@@ -3,40 +3,31 @@ html {
 }
 body {
   margin: 0;
-  padding-top: 50px;
+  padding-top: 5rem;
   min-height: 100%;
   position: relative;
   background-color: lemonchiffon;
 }
 .navbar {
-  position: fixed;
-  display: flex;
-  height: 65px;
-  width: 100%;
-  top: 0;
   background: darkslateblue;
 }
-.container {
-  display: block;
-  align-items: center;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-bottom: 200px;
-}
-.navbar-container {
-  display: flex;
-  align-items: center;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-.container .content {
-  width: 100%;
+.content {
   margin-top: 50px;
   margin-bottom: 50px;
   border: 1px solid cadetblue;
   border-radius: 10px;
-  padding: 10px;
-  align-content: center;
+  padding: 20px;
+}
+
+.clickable-content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid cadetblue;
+  border-radius: 10px;
+  padding: 20px;
+}
+.clickable-content:hover {
+  box-shadow: 2px 2px 5px cadetblue;
 }
 
 .content .intro {
@@ -45,6 +36,36 @@ body {
 .content .pic {
   float: right;
 }
+
+.content .pic img {
+  width: 20rem;
+  height: auto;
+  transition: all 0.2s ease-in-out;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+@media (max-width: 1000px) {
+  .content .pic {
+    float: none;
+  }
+  .content .pic img {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .content .pic {
+    float: right;
+  }
+  .content .pic img {
+    width: 30rem;
+    height: auto;
+  }
+}
+
 .content:after {
   content: " ";
   display: block;
@@ -52,23 +73,18 @@ body {
   clear: both;
 }
 
-.content .pic img {
-  width: 300px;
-  height: 300px;
-}
-
 .content .contact-info {
   border-bottom: 1px solid cadetblue;
-  align-content: center;
 }
 
-.title-block {
+.navbar-brand {
   margin-right: 30px;
-  color: azure;
   font-family: sans-serif;
   font-weight: 700;
   font-size: 24px;
   word-break: keep-all;
+  text-decoration: none;
+  color: azure;
 }
 
 .button-label {
@@ -77,33 +93,7 @@ body {
   font-weight: 500;
   color: gray;
   text-align: center;
-  margin-left: 5px;
   display: flex;
-}
-
-.material-icons {
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: "liga";
-  color: azure;
-  font-size: 24px;
 }
 
 a {
@@ -111,48 +101,32 @@ a {
   color: azure;
 }
 
-.nav-button {
-  background: transparent;
-  border: none;
-  outline: none;
+.nav-item {
   margin-left: 20px;
 }
-.nav-button .material-icons {
+.nav-item .material-icons {
   color: gray;
 }
-.nav-button:hover .material-icons {
+.nav-item:hover .material-icons {
   color: azure;
 }
-.nav-button:hover .button-label {
+.nav-item:hover .button-label {
   color: azure;
 }
-.nav-button.active .material-icons {
+.nav-item.active .material-icons {
   color: azure;
 }
-.nav-button.active .button-label {
+.nav-item.active .button-label {
   color: azure;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  height: 200px;
-  width: 100%;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
   background: darkslateblue;
-}
-.footer .contact {
-  display: inline-block;
-  padding-left: 20%;
-}
-.footer .link {
-  display: inline-block;
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 150px;
 }
 .footer .footer-title {
   margin-top: 50px;
-  margin-left: 120px;
   color: azure;
   font-family: sans-serif;
   font-weight: 400;
@@ -160,14 +134,13 @@ a {
 }
 .footer .footer-content {
   margin-top: 20px;
-  margin-left: 120px;
   color: azure;
   font-family: sans-serif;
   font-size: 18px;
   display: block;
 }
 .footer .follow-up {
-  position: relative;
+  margin-top: 50px;
   color: azure;
   font-family: sans-serif;
   font-size: 24px;
@@ -175,12 +148,4 @@ a {
 .follow-up.icons {
   left: 0;
   margin-top: 10px;
-}
-.pv {
-  margin-top: 20px;
-  margin-left: 120px;
-  padding-left: 20%;
-  color: azure;
-  font-family: sans-serif;
-  font-size: 18px;
 }

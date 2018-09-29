@@ -8,55 +8,51 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <link rel="stylesheet" href="../css/styles.css">
-    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <script src="../js/app.js"></script>
 
     <title>YUXUAN LIU</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="title-block"><a href="../index.html">YUXUAN LIU</a></div>
-
-            <button class="nav-button">
-                <a href="../index.html">
-                    <img src="../image/home.svg" alt="" class="material-icons" style="width: 24px; height: 24px;">
-                    <span class="button-label">Home</span>
-                </a>
-            </button>
-            <button class="nav-button active">
-                <a href="#">
-                    <img src="../image/user.svg" alt="" class="material-icons" style="width: 24px; height: 24px;">
-                    <span class="button-label">About Me</span>
-                </a>
-            </button>
-            <button class="nav-button">
-                <a href="./publication.html">
-                    <img src="../image/publication.svg" alt="" class="material-icons" style="width: 24px; height: 24px;">
-                    <span class="button-label">Publication</span>
-                </a>
-            </button>
-            <button class="nav-button">
-                <a href="./contact.html">
-                    <img src="../image/mail.svg" alt="" class="material-icons" style="width: 24px; height: 24px;">
-                    <span class="button-label">Contact</span>
-                </a>
-            </button>
-            <button class="nav-button">
-                <a href="./blog.html">
-                    <img src="../image/table.svg" alt="" class="material-icons" style="width: 24px; height: 24px;">
-                    <span class="button-label">Blog</span>
-                </a>
-            </button>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="../index.html">YUXUAN LIU</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsControl" aria-controls="navbarsControl"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsControl">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="publication.html">Publication</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <div class="container">
+    <main role="main" class="container">
         <div class="content">
             <h1>Education</h1>
             <h4>University of Pittsburgh</h4>
             <ul>
                 <li>Major: Master of Science in Information Science</li>
-                <li>Courses: Data Mining, Database Management, Algorithm Design, Web Technology and Standards, Machine Learning</li>
+                <li>Courses: Data Mining, Database Management, Algorithm Design, Web Technology and Standards,
+                    Machine
+                    Learning</li>
             </ul>
             <h4>University of Jinan</h4>
             <ul>
@@ -64,46 +60,95 @@
                 <li>Courses: Data Structure, Computer Operating System, Computer Networks</li>
             </ul>
         </div>
-    </div>
-    <footer class="footer">
-        <div class="contact">
-            <div class="footer-title">
-                Contact
-            </div>
-            <div class="footer-content">
-                <div class="footer-phone">
-                    <i class="material-icons">phone</i>
-                    <a>+1 412-628-4880</a>
-                </div>
-                <div class="footer-email">
-                    <i class="material-icons">email</i>
-                    <a href="mailto:yul196@pitt.edu">yul196@pitt.edu</a>
-                </div>
-            </div>
+    </main>
+    <main role="main" class="container">
+        <div class="content">
+            <h1>Technical Skills</h1>
+            <h4>Programming Languages</h4>
+            <ul>
+                <li>Java, Python, R, SQL, HTML, CSS, JavaScript, Typescript, C, C#, PHP, MATLAB, Shell</li>
+            </ul>
+            <h4>Framework</h4>
+            <ul>
+                <li>Angular, Ionic, Spring MVC, Spring Data JPA, Hibernate, Laravel</li>
+            </ul>
+            <h4>Database</h4>
+            <ul>
+                <li>MySQL, MongoDB, Neo4j, SQLite, InfluxDB</li>
+            </ul>
         </div>
-        <div class="link">
-            <div class="follow-up">
-                Follow Up
-                <div class="follow-up icons">
-                    <a href="https://www.facebook.com/profile.php?id=100011825612784">
-                        <i class="fa fa-facebook-official"></i>
-                    </a>
-                    <a href="https://www.instagram.com/easonlyx_/">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="https://github.com/leasonliu">
-                        <i class="fa fa-github"></i>
-                    </a>
-                    <a href="https://twitter.com/easonlyx">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/yuxuan-liu-6533b7148/">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
+    </main>
+    <main role="main" class="container">
+        <div class="content">
+            <h1>Work Experience</h1>
+            <h4>Health and Rehabilitation Informatics Lab, University of Pittsburgh</h4>
+            <ul>
+                <li>Full-stack Development</li>
+            </ul>
+            <h4>NetEase, Inc.</h4>
+            <ul>
+                <li>Android Software Development</li>
+            </ul>
+            <h4>Inspur Group</h4>
+            <ul>
+                <li>Android Software Development</li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-sm-4 offset-sm-2">
+                    <div style="text-align:center">
+                        <div class="footer-title">
+                            Contact
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-phone">
+                                <i class="material-icons">phone</i>
+                                <a>+1 412-628-4880</a>
+                            </div>
+                            <div class="footer-email">
+                                <i class="material-icons">email</i>
+                                <a href="mailto:yul196@pitt.edu">yul196@pitt.edu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 offset-sm-2">
+                    <div style="text-align:center">
+                        <div class="follow-up">
+                            Follow Up
+                        </div>
+                        <div class="follow-up icons">
+                            <a href="https://www.facebook.com/profile.php?id=100011825612784">
+                                <i class="fa fa-facebook-official"></i>
+                            </a>
+                            <a href="https://www.instagram.com/easonlyx_/">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/leasonliu">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com/easonlyx">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yuxuan-liu-6533b7148/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../js/vendor/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
